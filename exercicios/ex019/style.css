@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to top, rgb(180, 255, 180),rgb(81, 228, 81));
+    text-align: justify;
+
+}
+h1 {
+    color: rgb(0, 78, 0);
+}
+h1#principal { /*se colocar só #principal, td q tiver marcado com id "principal" vai receber o estilo*/
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+
+/*
+html id = css #
+html class = css .
+*/
+/*
+da p colocar id e class no msm elemento, mas a id sobrepõe
+*/
+h2 {
+    color: rgb(0, 121, 0);
+}
+.basico{
+    color: rgb(0, 170, 0);
+}
+.intermediario{
+    color: rgb(255, 255, 0);
+}
+.avancado{
+    color: rgb(255, 0, 0);
+}
+.destaque{
+    background-color: yellowgreen;
+}
+p {
+    text-indent: 30px;
+}

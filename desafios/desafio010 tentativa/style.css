@@ -1,0 +1,59 @@
+@charset "UTF-8"
+
+body{
+    background-color: #84E1AD;
+}
+
+header{
+
+    background-image: linear-gradient(to bottom, #3CD883, #195B38);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+main{
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.video{
+    background-color: #1A5C38;
+
+}
+
+div.extra{
+    background-color: #1A5C38;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+main > h1 {
+    font-family: 'IDroid';
+    }
+
+main > h2 {
+    font-family: 'IDroid';
+    }
+
+main > p{
+    text-indent: 30px;
+    text-align: justify;
+}
+
+
+
+footer > p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    background-color: #1A5C38;
+    margin: 0px;
+}

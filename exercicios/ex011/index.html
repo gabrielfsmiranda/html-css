@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em dispositivos diferentes ou simplesmente aumente e diminua o tamanho da tela do seu navegador</p>
+<!--essas imagens diferentes podem ser usadas pra adaptar site pra computador, tablet e celular por exemplo-->
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <!--taxa de bounce rate (qtd de usuarios q abrem e logo vao embora do site) é medida pelo google e serve p saber q os usuarios nao gostaram mt da indicação.. site com conteudo mt grande precisa de rolar a tela e usuarios nao gostam, aumentando taxa de bounce rate-->
+    <!--
+    Dica pra pegar audio.. só ir no painel do youtube studio
+    -->
+
+    <h1>Reproduzindo áudio</h1>
+    <audio controls="controls" autoplay="autoplay" src="midia/alex-hamlin-lonely-man.mp3" type="audio/mpeg">
+    </audio>
+    <!--nao tocou no firefox
+    Pode ter navegador compativel com mp3 wav e ogg
+    -->
+    <!--esse codigo q achei no site devmedia.com.br funcionou
+    ...só o autoplay continuou sem funcionar-->
+    <!--tenho que ver dps se a tag ali é mpeg ou mp3 pros audios em mp3-->
+    <audio preload="metadata" controls>
+        <source src="midia/alex-hamlin-lonely-man.mp3" type="audio/mpeg">
+        <source src="midia/alex-hamlin-lonely-man.ogg
+        " type="audio/ogg">
+        <source src="midia/alex-hamlin-lonely-man.wav" type="audio/wav">
+        <p>infelizmente seu navegador não consegue reproduzir audio</p> <!--essa msg aparece se nao carregar.. fica dentro da tag audio-->
+        <!--autoplay nada.. mas dps do controls apareceu o audio normal
+        metadata não mudou nada pra mim.. mas pode demorar pq so baixa qd clica no site na internet.. aí só posso testar na rede-->
+    </audio>
+    <!--esse ultimo nao carregou
+    deve ta desatualizado
+    usar o modelo de cima e dps fazer exercicios com isso de conversor.. procurar mais info-->
+    <!--rever os trem la de tags em desuso-->
+    <!--
+    evitar wav pq é pesado.. deixar arquivo pesado (img, vid e aud) p download e não pra navegação
+    -->
+</body>
+</html>

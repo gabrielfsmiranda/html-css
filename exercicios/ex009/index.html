@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código fonte / Pré-formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+    <!--o comando CODE deixa as letras nessa outra fonte monoespaçada.. melhor para ler códigos assim-->
+    <!--relembrando da aula anterior, CTRL+SHIFT+P e dps selecionar envelopar.. aí só digitar a tag e ja vai uma pro começo e outra pro fim da seleção-->
+    <pre>
+        <code>
+            num = int(input('Digite um número'))
+            if num % 2 == 0:
+                print(f'O número {num} é PAR')
+            else:
+                print(f'O número {num} é ÍMPAR')
+            print('Fim do programa')
+        </code>
+    </pre>
+    <!--quando se envelopa com a tag PRE, o html considera inclusive as quebras de linhas e espaços.. esse exemplo é de python.. tem curso do guanabara tb-->
+    <!--outro macete.. selecionar todas as linhas e apertar TAB move td em bloco.. ja SHIFT+TAB move pra tras-->
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>
+    <!--quando for realmente citação, é melhor colocar a tag Q, pois da sentido também (semântica do html)-->
+    <h2>Citações completas</h2>
+    <p>Segundo um autor aleatorio em seu livro aleatorio(na vdd o link vai pro html4 for dummies aqui kkk mas segue o exercicio com lorem):</p>
+    <blockquote cite="https://www.google.com.br/books/edition/HTML_4_For_Dummies/KgY5NOK_yZEC?hl=pt-BR&gbpv=1&dq=html+for+dummies&pg=PA16&printsec=frontcover">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores in, suscipit alias eius, asperiores iusto inventore vitae natus exercitationem voluptatem nostrum iste non distinctio impedit quia veniam, laudantium minima modi.</blockquote>
+    <!--observe q esse ultimo tipo de citação indica pro html os direitos autorais, mas não coloca aspas, porem também destaca o texto deslocando pra direita na formatação-->
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+</body>
+</html>

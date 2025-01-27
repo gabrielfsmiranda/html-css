@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 1em;
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /*da p colocar so uma fonte, mas em alguns dispositivos pode nao ter essa fonte, por isso no font family vem a sequencia de fontes p aumentar compatibilidade.. agora fez sentido*/
+        
+        /*ver css web font combinations*/
+        
+        /*da p colocar muuuuito generico e botar só serif ou só sans-serif por ex tb.. bota a generica no final por ultima opção*/
+
+        /*
+        Medidas absolutas:
+        cm, mm, in, px, pt, pc, vw, vh, %
+
+        Medidas relativas:
+        em, ex, rem, vw
+        em -> altura relativa ao M
+        ex -> altura relativa ao x
+        vw -> % da largura da viewport
+        vh -> relativo a altura da viewport
+        
+        W3C recomenda usar 'px' e 'em'
+        16px é o tamanho natural/padrão e geralmente é relativo a 1em
+
+        Prof Guanabara recomenda usar 'em' pq é relativo ao tamanho da fonte padrão do dispositivo.. melhor adaptabilidade ne.. ele falou relativo ao px q tem tela q usa pixel duplo, triplo, quadruplo e isso daria diferença no design
+
+        font-weight: 
+            "lighter, normal, bold, bolder"
+            "100-900"
+                nem todas fontes tem todos os valores.. outras tem mais valores desses em extenso..
+
+        font-style:
+            "normal, italic.."
+        text-decoration:
+            "underline, line-through..."
+        */
+
+        /*
+        shorthand font: (tudo junto mais resumido)
+        font-style -> font-wheight -> font-size -> font family
+        */
+        h1{
+            font: italic bold 3em 'Times New Roman', serif;
+        }
+        h2 {
+            font: normal bold 2em 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates perspiciatis modi voluptas, minus aperiam, necessitatibus ipsum quisquam alias sequi rem iste laudantium aliquam. Dignissimos numquam quod iusto laborum fuga nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae alias cupiditate aspernatur iusto ad iste fugiat nostrum? Eveniet sed, libero sit repellendus debitis eaque quis consequatur ullam quisquam explicabo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, aperiam iure ab praesentium harum asperiores, quia soluta, amet velit a cupiditate eius voluptate sed ratione molestias sint perferendis? Molestias, eligendi!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio vero facilis reprehenderit incidunt eligendi voluptates repellendus ex obcaecati laborum maiores. Error aliquam neque pariatur. Fugiat consequuntur sed autem velit fuga.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At consequuntur tempore optio. Illum quaerat adipisci, quisquam tempore illo at. Suscipit beatae, eum id dolor reiciendis quibusdam blanditiis perferendis architecto officiis!</p>
+</body>
+</html>
