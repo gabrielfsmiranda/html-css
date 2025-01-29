@@ -6,21 +6,35 @@
     <title>Document</title>
     <style>
         body{
+            /*
             height: 100vh;
-            background-color: black; /*msm com imagem, melhor colocar cor de fundo tb.. por carregamento e etc..*/
+            background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
-            background-repeat: repeat-y;
-            background-size: cover; 
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            */
+
+            /*msm com imagem, melhor colocar cor de fundo tb.. por carregamento e etc..*/
+
             /*
            -- contain é segunda opção (mostra 100% da img, mantém proporções, mas cria faixas pretas se precisar).. 
             --cover eu gostei mais (mostra menos da img, mas mantém proporção e ocupa a tela toda
             --por padrao isso vem no auto
             */
+
+            /*
+            shorthand - background:  color > image > position > repeat > [size]> attachment
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat /*cover.. essa parte não ta funcionando msm estando na regra..tem q colocar à parte*/ fixed;
+
+            background-size: cover;
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
