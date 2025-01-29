@@ -1,1 +1,67 @@
 @charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh; /*100% daria no msm*/
+    background-color: darkgray;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;
+    /*text-transform: uppercase; ..td maiusculo.. a linha de baixo faz o msm de maneira menos gritante*/
+    font-variant: small-caps;
+}
+
+header > p{
+    padding-bottom: 50px;
+}
+
+a{ /*tb da p selecionar assim "header a, footer a", mas não precisa pq esse exemplo vai p todos a msm.. isso é só uma anotação pra aprender mais possibilidades de customização*/
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    /*viewheight.. colocar em % no lugar do vh da no msm*/
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: darkgray;
+    color: white;
+}
+
+section.imagem > p{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.250);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
