@@ -9,8 +9,13 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        p{
+            width: 500px;
+        }
+
         table{
             width: 500px;
+            position: relative;
         }
 
         td, th{
@@ -18,9 +23,30 @@
             padding: 10px;
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot{
             background-color: grey;
             color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(odd){ /*2n-1*/
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even){ /*2n*/
+            background-color: lightgray;
         }
 
         td.num{
@@ -33,6 +59,7 @@
     <!--
         Anatomia para tabelas grandes
         table
+            caption
             thead
                 tr, td, th
             tbody
@@ -41,12 +68,12 @@
                 tr, td, th
     
     -->
-</body>
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -161,9 +188,20 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th> <!--td titulo-->
+                <th scope="row">Total de Habitantes</th> <!--td titulo-->
                 <td class="num"><strong>>200 Mi</strong></td> <!--td dado-->
             </tr>
         </tfoot>
     </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi corporis voluptatem placeat molestias dicta! Facere rerum laborum, blanditiis sunt quisquam facilis hic debitis voluptatem, molestiae sequi porro, eius dicta. Maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias numquam doloremque excepturi, molestiae ea dicta atque pariatur totam. Magni vero, perferendis ad quibusdam aperiam velit. Dolore deleniti laboriosam eligendi voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit at non ipsam cum eum possimus iste, minima, delectus est quibusdam officiis hic laborum quas nam distinctio autem quisquam atque dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat adipisci maiores necessitatibus amet obcaecati officiis ut odio laborum deserunt nemo, aperiam, voluptas suscipit harum! Iste magni amet rem reprehenderit aperiam.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi corporis voluptatem placeat molestias dicta! Facere rerum laborum, blanditiis sunt quisquam facilis hic debitis voluptatem, molestiae sequi porro, eius dicta. Maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias numquam doloremque excepturi, molestiae ea dicta atque pariatur totam. Magni vero, perferendis ad quibusdam aperiam velit. Dolore deleniti laboriosam eligendi voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit at non ipsam cum eum possimus iste, minima, delectus est quibusdam officiis hic laborum quas nam distinctio autem quisquam atque dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat adipisci maiores necessitatibus amet obcaecati officiis ut odio laborum deserunt nemo, aperiam, voluptas suscipit harum! Iste magni amet rem reprehenderit aperiam.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi corporis voluptatem placeat molestias dicta! Facere rerum laborum, blanditiis sunt quisquam facilis hic debitis voluptatem, molestiae sequi porro, eius dicta. Maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias numquam doloremque excepturi, molestiae ea dicta atque pariatur totam. Magni vero, perferendis ad quibusdam aperiam velit. Dolore deleniti laboriosam eligendi voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit at non ipsam cum eum possimus iste, minima, delectus est quibusdam officiis hic laborum quas nam distinctio autem quisquam atque dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat adipisci maiores necessitatibus amet obcaecati officiis ut odio laborum deserunt nemo, aperiam, voluptas suscipit harum! Iste magni amet rem reprehenderit aperiam.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi corporis voluptatem placeat molestias dicta! Facere rerum laborum, blanditiis sunt quisquam facilis hic debitis voluptatem, molestiae sequi porro, eius dicta. Maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias numquam doloremque excepturi, molestiae ea dicta atque pariatur totam. Magni vero, perferendis ad quibusdam aperiam velit. Dolore deleniti laboriosam eligendi voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit at non ipsam cum eum possimus iste, minima, delectus est quibusdam officiis hic laborum quas nam distinctio autem quisquam atque dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat adipisci maiores necessitatibus amet obcaecati officiis ut odio laborum deserunt nemo, aperiam, voluptas suscipit harum! Iste magni amet rem reprehenderit aperiam.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi corporis voluptatem placeat molestias dicta! Facere rerum laborum, blanditiis sunt quisquam facilis hic debitis voluptatem, molestiae sequi porro, eius dicta. Maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias numquam doloremque excepturi, molestiae ea dicta atque pariatur totam. Magni vero, perferendis ad quibusdam aperiam velit. Dolore deleniti laboriosam eligendi voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit at non ipsam cum eum possimus iste, minima, delectus est quibusdam officiis hic laborum quas nam distinctio autem quisquam atque dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat adipisci maiores necessitatibus amet obcaecati officiis ut odio laborum deserunt nemo, aperiam, voluptas suscipit harum! Iste magni amet rem reprehenderit aperiam.</p>
+</body>
 </html>
