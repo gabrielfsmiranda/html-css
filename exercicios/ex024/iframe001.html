@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    <style>
+        iframe{ /*config do iframe no css sobrepõe*/
+            width: 500px;
+            height: 500px;
+            border: 1px dashed black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <p>Acessando o site do 
+        <!--
+        Tamanho padrão do iframe 300x150
+        -->
+
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500" scrolling="'no">
+            Aqui vai uma mensagem se o iframe não carregar.. o prof guanabara coloca um link pro site tipo isso:
+            <a href="https://www.cursoemvideo.com">cursoemvideo</a>
+        </iframe>
+
+        <!--scrolling:"no" só funcionou no nav do mac-->
+
+    para aprender a programar.
+    
+    </p>
+    
+        <!--
+
+        <p>O site do <iframe src="https://www.google.com.br" frameborder="0"></iframe>também é muito legal!</p>
+        
+        o site do google tem proteção para não ser exibido em sites de terceiros
+        
+        -->
+
+    <p>
+        O repositório do Guanabara
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0" height="500" width="500">
+
+        </iframe>
+        também é bem legal!
+    </p>
+
+</body>
+</html>
