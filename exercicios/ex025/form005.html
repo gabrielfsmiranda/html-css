@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <label for="isxmas"><input type="radio" name="sexo" id="isxmas" value="M" checked> Masculino</label><br>
+            <label for="isxfem"><input type="radio" name="sexo" id="isxfem" value="F"> Feminino</label>
+        
+            <!--radio não desmarca.. mas se colocar mais de uma opção com mesmo name, da p mudar entre eles, porém nunca mais deixa desmarcado a não ser se atualizar a tela-->
+        
+            <!--checked deixa pré-selecionado.. radio só aceita o ultimo checked, pq só pode escolher uma opção-->
+
+            <!--tem que colocar value no radio pra enviar dados aparentemente...os dados enviados são os do value.. bom usar o get pra ver na url como o form ta indo-->
+        </fieldset>
+        
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <label for="iesbas"><input type="checkbox" name="esbas" id="iesbas"> Basquete<br></label>
+            <label for="iesfut"><input type="checkbox" name="esfut" id="iesfut" checked> Futebol<br></label>
+            <label for="iesnat"><input type="checkbox" name="esnat" id="iesnat"> Natação<br></label>
+            <label for="iesten"><input type="checkbox" name="esten" id="iesten"> Tênis</label>
+        </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+    </form>
+
+        <!--funcionou sem o form, mas vou por de novo, pq da mais opções...-->
+</body>
+</html>
