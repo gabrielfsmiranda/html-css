@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione eum voluptate magni eligendi tempore, explicabo omnis. Nostrum reprehenderit porro expedita neque eveniet natus fugiat repudiandae consectetur. Tempora voluptatibus laborum sint.</p>
+    <iframe src="paginas-extras/pagina004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+        Seu navegador não é compatível com isso...
+    </iframe>
+    <!--
+    sandbox="sandbox" ...bloqueia captura/roubo de dados de visitantes por sites de terceiros via iframes
+
+    allow-same-origin permite coisas do msm site seu??
+
+    sandbox ali no caso filtra q tipo de interação o usuário pode ter com o site do iframe entao..
+    
+    referrerpolicy="no-referrer" ...impede captura de dados para propaganda e etc de dentro do iframe
+    -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore magnam distinctio eos ratione doloribus veritatis magni incidunt voluptatum dolores blanditiis vitae, eaque minus fuga harum quibusdam sed porro nemo. Eaque?</p>
+</body>
+</html>
