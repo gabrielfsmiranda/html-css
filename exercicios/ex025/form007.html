@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <!--prof guanabara lembrou que geralmente usa div, mas ele ta usando paragrafos pra não ter que ficar usando css.. por pratica, ne-->
+        <p>
+            <label for="iest">Estado: </label>
+            <select name="est" id="iest">
+                
+                <option value="" selected>--- Escolha ---</option>
+
+                <!--na vdd o primeiro ja veio selecionado por padrão msm sem o selected-->
+
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contador</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+        </p>
+
+        <!--o value tb aparece.. talvez seja bom tirar..
+        tb da p organizar optgroup em datalist.. prof disse q tem no material em pdf, mas nao tava funcionando ainda nos testes de 2a (data da aula), porem ja tem oficial no w3c-->
+
+        <p>
+            <label for="imsg">Mensagem: </label>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <!--usuario tb pode mudar o tamanho da area do texto com o cursor.. tem tamanho ilimitado.. melhor usar metodo POST qd coloca isso...-->
+
+        <!--procurar dps como limita pra q usuário não mude tamanho do textarea e somente apareça barra de rolagem.. ou pra limitar tamanho da msg tb..-->
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
