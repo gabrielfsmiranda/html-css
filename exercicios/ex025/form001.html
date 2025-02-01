@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="GET" autocomplete="off">
         <p><label for="inome">Nome: </label>
             <input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome: </label>
@@ -22,6 +22,23 @@
 
         <!--
         dados vao apos url do php.. prox video vamo aprender como faz no caso de senha p nao mostrar..
+        
+        pra tornar mais seguro precisa estudar protocolo https e outras coisas parece.. prof falou na aula seguinte
+
+        method=GET mostra dados na url
+            - dados não sensíveis;
+            - possível compartilhar a url;
+            - até 3000 bytes (até 3000 letras).
+        
+            method=POST não mostra na url
+            - dados sensíveis;
+            - esconder dados da url;
+            - dados maiores de 3000 bytes;
+        
+            apesar disso, o POST mostra no header da requisição pra puxar a pagina.. pra proteger os dados tem q saber criptografia e protocolo https
+
+            Comentário do video no youtube: 
+                "Pra quem não esta achando o Nome e Sobrenome no Header, agora ele fica no Payload ao lado de Header."
         -->
 
         <!--
