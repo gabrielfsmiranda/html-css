@@ -19,8 +19,22 @@ header > h1 {
     text-align: center;
 }
 
+span#burger {
+    background-color: rgb(49, 49, 49);
+    display: block; /*funcionou melhor q width com 100vw*/
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+span#burger:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer; /*prof colocou no de cima span#burger, mas isso aqui faz mais sentido p mim kkkk ..funciona dos dois jeitos..*/
+}
+
 menu {
-    display: block; /*por eqt isso nao mudou nada visualmente...*/
+    display: none; /*o display block mudava nada visualmente...o none desaparece.. + javascript dentro do span no html faz aparecer com o hamburguinho clicado*/
 }
 
 menu > ul {
