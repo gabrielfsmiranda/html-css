@@ -1,3 +1,8 @@
 @charset "UTF-8";
 
 /*aparelho em pé*/
+
+body{
+    background-image: url(../../imagens/cev-portrait.jpg);
+    background-position: center bottom; /*mas ja tava ajeitado desde antes no modo retrato msm sem isso.. porem colocamos tb..*/
+}
